@@ -26,6 +26,8 @@ console.log(artikel2);
 
 artikel2.textContent = "Her står også noget klogt, wauw!";
 
+/* OPGAVE 3 */
+
 let billede1 = document.querySelector("article:first-child img");
 billede1.setAttribute("src", "https://picsum.photos/id/80/400/300");
 billede1.setAttribute("alt", "grankogler");
@@ -33,3 +35,26 @@ billede1.setAttribute("alt", "grankogler");
 let billede2 = document.querySelector("article:nth-child(2) img");
 billede2.setAttribute("src", "https://picsum.photos/id/90/400/300");
 billede2.setAttribute("alt", "glas på pinde");
+
+/* OPGAVE 4 */
+
+const newArticle = document.createElement("article");
+const newImage = document.createElement("img");
+newImage.src = "https://picsum.photos/id/57/400/300";
+newImage.alt = "Street in the city";
+
+const newHeading = document.createElement("h3");
+newHeading.textContent = "En flot gade i byen";
+
+const newParagraph = document.createElement("p");
+newParagraph.textContent = "Her er der åbenbart ingen, der gider at gå.";
+
+const mainElement = document.querySelector("main");
+
+// Append the new elements to the new article
+newArticle.appendChild(newImage);
+newArticle.appendChild(newHeading);
+newArticle.appendChild(newParagraph);
+
+// Insert the new article after the existing articles
+mainElement.appendChild(newArticle);
