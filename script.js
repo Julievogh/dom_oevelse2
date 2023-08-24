@@ -1,0 +1,10 @@
+let overskrift = document.querySelector("h1");
+console.log(overskrift);
+let underoverskrift = document.querySelector("h2");
+console.log(underoverskrift);
+let tekst = document.querySelector("p");
+console.log(tekst);
+let billede = document.querySelector("img");
+console.log(billede);
+let article = document.querySelector("article");
+console.log(article);
