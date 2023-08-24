@@ -26,8 +26,10 @@ console.log(artikel2);
 
 artikel2.textContent = "Her står også noget klogt, wauw!";
 
-let billede = document.querySelector("img");
-console.log(billede);
+let billede1 = document.querySelector("article:first-child img");
+billede1.setAttribute("src", "https://picsum.photos/id/80/400/300");
+billede1.setAttribute("alt", "grankogler");
 
-let article = document.querySelector("article");
-console.log(article);
+let billede2 = document.querySelector("article:nth-child(2) img");
+billede2.setAttribute("src", "https://picsum.photos/id/90/400/300");
+billede2.setAttribute("alt", "glas på pinde");
